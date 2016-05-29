@@ -1,0 +1,5 @@
+﻿Nombre de la BD: 	nombresBD
+Nombre de la Tabla:	
+basesDatos(nombreBD (String)) 
+
+Usuarios(idUsuario (int), nombreUsuario (String), contrasena (String))

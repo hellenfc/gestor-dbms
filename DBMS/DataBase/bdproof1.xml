@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<bdproof1>
+  <xs:schema id="bdproof1" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="bdproof1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="tabla1">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id1" type="xs:int" />
+                <xs:element name="nombre1" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//tabla1" />
+        <xs:field xpath="id1" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <tabla1>
+    <id1>1</id1>
+    <nombre1>nombre1</nombre1>
+  </tabla1>
+</bdproof1>

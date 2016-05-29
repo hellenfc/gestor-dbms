@@ -1,0 +1,3 @@
+﻿Nombre de la BD: 	nombresBD
+Nombre de la Tabla:	basesDatos
+Nombre de la Columna:	nombreBD (String)

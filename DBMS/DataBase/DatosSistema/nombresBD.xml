@@ -1,0 +1,72 @@
+<?xml version="1.0" standalone="yes"?>
+<nombresBD>
+  <xs:schema id="nombresBD" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="nombresBD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="basesDatos">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="nombreBD" type="xs:string" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Usuarios">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="idUsuario" type="xs:int" />
+                <xs:element name="nombreUsuario" type="xs:string" />
+                <xs:element name="contrasena" type="xs:string" minOccurs="0" />
+                <xs:element name="tipoUsuario" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//basesDatos" />
+        <xs:field xpath="nombreBD" />
+      </xs:unique>
+      <xs:unique name="Constraint2" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Usuarios" />
+        <xs:field xpath="nombreUsuario" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <basesDatos>
+    <nombreBD>bdproof1</nombreBD>
+  </basesDatos>
+  <basesDatos>
+    <nombreBD>bdproof2</nombreBD>
+  </basesDatos>
+  <basesDatos>
+    <nombreBD>bdproof3</nombreBD>
+  </basesDatos>
+  <basesDatos>
+    <nombreBD>hospital</nombreBD>
+  </basesDatos>
+  <basesDatos>
+    <nombreBD>escuela</nombreBD>
+  </basesDatos>
+  <basesDatos>
+    <nombreBD>baseNueva</nombreBD>
+  </basesDatos>
+  <basesDatos>
+    <nombreBD>basePrueba2</nombreBD>
+  </basesDatos>
+  <basesDatos>
+    <nombreBD>colegio</nombreBD>
+  </basesDatos>
+  <Usuarios>
+    <idUsuario>1</idUsuario>
+    <nombreUsuario>admin</nombreUsuario>
+    <contrasena>admin</contrasena>
+    <tipoUsuario>administrador</tipoUsuario>
+  </Usuarios>
+  <Usuarios>
+    <idUsuario>1</idUsuario>
+    <nombreUsuario />
+    <contrasena />
+    <tipoUsuario>Lectura</tipoUsuario>
+  </Usuarios>
+</nombresBD>

@@ -1,0 +1,63 @@
+<?xml version="1.0" standalone="yes"?>
+<colegio>
+  <xs:schema id="colegio" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="colegio" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="alumnos">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="idAlumno" type="xs:int" minOccurs="0" />
+                <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="estudiante">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="idEst" type="xs:int" />
+                <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="clases">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="idclase" type="xs:int" />
+                <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//estudiante" />
+        <xs:field xpath="idEst" />
+      </xs:unique>
+      <xs:unique name="clases_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//clases" />
+        <xs:field xpath="idclase" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <alumnos>
+    <idAlumno>1</idAlumno>
+    <nombre>ana</nombre>
+  </alumnos>
+  <alumnos>
+    <idAlumno>1</idAlumno>
+    <nombre>laura</nombre>
+  </alumnos>
+  <alumnos>
+    <idAlumno>2</idAlumno>
+    <nombre>luis</nombre>
+  </alumnos>
+  <estudiante>
+    <idEst>1</idEst>
+    <nombre>ana</nombre>
+  </estudiante>
+  <estudiante>
+    <idEst>2</idEst>
+    <nombre>ada</nombre>
+  </estudiante>
+</colegio>

@@ -1,0 +1,50 @@
+
+-------------------SELECT--------------------------------
+  0	      1 	2	3	4	5     6  7
+select idAlumno,nombre from alumnos   where  idAlumno >  2
+
+op1Condicion + operador + op2Condicion
+
+
+-------------------INSERT--------------------------------
+0	1     2		3		  4	   5
+insert into tabla (col1,col2,col3,col4) values (v1,v2,v3,v4)
+
+insert into alumnos (idAlumno,nombre) values (7,pedro)
+
+0	1	2	3	4
+insert into   tablas  values  (v1,v2,v3,...)
+
+
+-------------------DELETE--------------------------------
+  0	1     2     3      4
+DELETE FROM tabla WHERE condición;
+
+
+-------------------UPDATE--------------------------------
+
+  0          1         2  [			3	           ]    4	5
+UPDATE "nombre_tabla" SET colonne 1 = [[valor1], colonne 2 = [valor2] WHERE "condición";
+
+
+
+
+---------------------create----------------------
+CREATE TABLE "nombre_tabla"
+("columna 1" "tipo_de_datos_para_columna_1",
+ "columna 2" "tipo_de_datos_para_columna_2",
+primary key {columna}
+constraint nombre_relacion FOREIGN KEY {Customer_SID} REFERENCES CUSTOMER {SID};
+
+id int, nombre string, idTipo int foreign key
+ ... )
+
+update alumnos set idAlumno=1,nombre=marvin where idAlumno=9
+
+insert into clasesEstudiante (id,idestud,idcl) values (104,1,8)
+insert into matricula (id,idestud,idcl) values (104,1,8)
+
+create table clasesEstudiante(id int,idestud int,idcl int,primary key id,constraint relacion1 foreign key idestud references estudiante idEst,constraint relacion2 foreign key idcl references clases idclases)
+
+
+DROP TABLE "nombre_tabla

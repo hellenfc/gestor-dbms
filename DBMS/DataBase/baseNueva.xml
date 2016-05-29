@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<baseNueva>
+  <tabla2>
+    <idT>1</idT>
+    <nombre>tomas</nombre>
+  </tabla2>
+  <tabla2>
+    <idT>2</idT>
+    <nombre>joel</nombre>
+  </tabla2>
+  <tabla2>
+    <idT>3</idT>
+    <nombre>marvin</nombre>
+  </tabla2>
+  <tabla3>
+    <id>1</id>
+    <nombre>ana</nombre>
+  </tabla3>
+  <tabla3>
+    <id>1</id>
+    <nombre>ada</nombre>
+  </tabla3>
+</baseNueva>

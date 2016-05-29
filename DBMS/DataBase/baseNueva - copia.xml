@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<baseNueva>
+  <prueba>
+    <id>1</id>
+    <nombre>ada</nombre>
+    <sexoFem>true</sexoFem>
+    <fecha>2000-12-06T00:00:00-06:00</fecha>
+  </prueba>
+  <prueba>
+    <id>7</id>
+    <nombre>marvin</nombre>
+    <sexoFem>false</sexoFem>
+  </prueba>
+  <prueba>
+    <id>2</id>
+    <nombre>gaby</nombre>
+    <sexoFem>true</sexoFem>
+  </prueba>
+  <prueba>
+    <id>3</id>
+    <nombre>hellen</nombre>
+    <sexoFem>true</sexoFem>
+  </prueba>
+  <tabla2>
+    <idT>1</idT>
+    <nombre>tomas</nombre>
+  </tabla2>
+  <tabla2>
+    <idT>2</idT>
+    <nombre>joel</nombre>
+  </tabla2>
+  <tabla2>
+    <idT>3</idT>
+    <nombre>marvin</nombre>
+  </tabla2>
+</baseNueva>

@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<escuela>
+  <alumnos>
+    <idAlumno>1</idAlumno>
+    <nombre>marvin</nombre>
+  </alumnos>
+  <alumnos>
+    <idAlumno>2</idAlumno>
+    <nombre>gabriela</nombre>
+  </alumnos>
+  <alumnos>
+    <idAlumno>3</idAlumno>
+    <nombre>alejandra</nombre>
+  </alumnos>
+  <alumnos>
+    <idAlumno>4</idAlumno>
+    <nombre>marcela</nombre>
+  </alumnos>
+  <alumnos>
+    <idAlumno>5</idAlumno>
+    <nombre>hellen</nombre>
+  </alumnos>
+  <alumnos>
+    <idAlumno>6</idAlumno>
+    <nombre>fulano</nombre>
+  </alumnos>
+  <alumnos>
+    <idAlumno>8</idAlumno>
+    <nombre>mengano</nombre>
+  </alumnos>
+</escuela>

@@ -1,0 +1,166 @@
+<?xml version="1.0" standalone="yes"?>
+<colegio>
+  <xs:schema id="colegio" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="colegio" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="alumnos">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="idAlumno" type="xs:int" minOccurs="0" />
+                <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="estudiante">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="idEst" type="xs:int" />
+                <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="clases">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="idclase" type="xs:int" />
+                <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="clasesEstudiante">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id" type="xs:int" />
+                <xs:element name="idestud" type="xs:int" minOccurs="0" />
+                <xs:element name="idcl" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="clasesxEstudiante">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="idestud" type="xs:int" minOccurs="0" />
+                <xs:element name="idcl" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="matricula">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id" type="xs:int" />
+                <xs:element name="idestud" type="xs:int" minOccurs="0" />
+                <xs:element name="idcl" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="matricula2">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id" type="xs:int" />
+                <xs:element name="idestud" type="xs:int" minOccurs="0" />
+                <xs:element name="idcl" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//estudiante" />
+        <xs:field xpath="idEst" />
+      </xs:unique>
+      <xs:unique name="clases_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//clases" />
+        <xs:field xpath="idclase" />
+      </xs:unique>
+      <xs:unique name="clasesEstudiante_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//clasesEstudiante" />
+        <xs:field xpath="id" />
+      </xs:unique>
+      <xs:unique name="matricula_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//matricula" />
+        <xs:field xpath="id" />
+      </xs:unique>
+      <xs:unique name="matricula2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//matricula2" />
+        <xs:field xpath="id" />
+      </xs:unique>
+      <xs:keyref name="relacion1" refer="Constraint1">
+        <xs:selector xpath=".//matricula2" />
+        <xs:field xpath="idestud" />
+      </xs:keyref>
+      <xs:keyref name="relacion2" refer="clases_Constraint1">
+        <xs:selector xpath=".//matricula2" />
+        <xs:field xpath="idcl" />
+      </xs:keyref>
+    </xs:element>
+  </xs:schema>
+  <alumnos>
+    <idAlumno>1</idAlumno>
+    <nombre>ana</nombre>
+  </alumnos>
+  <alumnos>
+    <idAlumno>1</idAlumno>
+    <nombre>laura</nombre>
+  </alumnos>
+  <alumnos>
+    <idAlumno>2</idAlumno>
+    <nombre>luis</nombre>
+  </alumnos>
+  <estudiante>
+    <idEst>1</idEst>
+    <nombre>ana</nombre>
+  </estudiante>
+  <estudiante>
+    <idEst>2</idEst>
+    <nombre>ada</nombre>
+  </estudiante>
+  <clases>
+    <idclase>1</idclase>
+    <nombre>math</nombre>
+  </clases>
+  <clases>
+    <idclase>2</idclase>
+    <nombre>ciencias</nombre>
+  </clases>
+  <clasesEstudiante>
+    <id>1</id>
+    <idestud>1</idestud>
+    <idcl>1</idcl>
+  </clasesEstudiante>
+  <clasesEstudiante>
+    <id>101</id>
+    <idestud>2</idestud>
+    <idcl>1</idcl>
+  </clasesEstudiante>
+  <clasesEstudiante>
+    <id>102</id>
+    <idestud>1</idestud>
+    <idcl>2</idcl>
+  </clasesEstudiante>
+  <clasesEstudiante>
+    <id>103</id>
+    <idestud>1</idestud>
+    <idcl>1</idcl>
+  </clasesEstudiante>
+  <clasesEstudiante>
+    <id>104</id>
+    <idestud>1</idestud>
+    <idcl>8</idcl>
+  </clasesEstudiante>
+  <clasesEstudiante>
+    <id>105</id>
+    <idestud>6</idestud>
+    <idcl>8</idcl>
+  </clasesEstudiante>
+  <matricula>
+    <id>104</id>
+    <idestud>1</idestud>
+    <idcl>8</idcl>
+  </matricula>
+  <matricula2>
+    <id>101</id>
+    <idestud>1</idestud>
+    <idcl>1</idcl>
+  </matricula2>
+</colegio>
